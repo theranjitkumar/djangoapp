@@ -4,8 +4,10 @@ from django.http import HttpResponse
 
 
 def post(request):
-    return HttpResponse("post")
+    # return HttpResponse("post")
+    return render(request, 'post.html', {})
 
-def postById(request):
-    return HttpResponse("postById")
+def postDetails(request):
+    # return HttpResponse("postDetails")
+    return render(request, 'details.html', {})
 
