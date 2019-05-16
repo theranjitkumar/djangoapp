@@ -27,9 +27,11 @@ def post(request):
     return render(request, 'post.html', {'posts': posts})
 def postRestData(request):
 	# posts = Post.objects.all();
-    return HttpResponse(json.dumps(posts), content_type='application/json')
+    # return HttpResponse(json.dumps(posts), content_type='application/json')
+    # OR
+    return JsonResponse(list(posts), safe=False)
 
 def postDetails(request):
-    # return HttpResponse("postDetails")
+    # return HttpResponse("postDetails") 
     return render(request, 'details.html', {})
 
