@@ -16,7 +16,7 @@
 ### steps to integrate mysqlclient with django (special case)
 
 	Step: 1. sudo apt-get install python3-dev
-	Step: 2. sudo apt-get install python3-dev libmysqlclient-dev
+	Step: 2. sudo apt-get install libmysqlclient-dev
 	Step: 3. pip install mysqlclient -after tow above installation we able to install mysqlclient
 	Step: 4. Create database by which name you are using in project
 	Step: 5. run python manage.py migrate 
